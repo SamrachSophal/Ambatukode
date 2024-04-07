@@ -4,9 +4,7 @@ def reverse_ascending(numbers):
     for i in range(1, len(numbers)):
         if numbers[i] <= numbers[i - 1]:
             result.extend(reversed(numbers[start:i]))
-            print(result)
             start = i
-            print(start)
     result.extend(reversed(numbers[start:]))
     return result
 
