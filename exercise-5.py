@@ -1,7 +1,14 @@
 def reverse_ascending(numbers):
-    numbers.sort(reverse=True)
-    return numbers
+    result = []
+    start = 0
+    for i in range(1, len(numbers)):
+        if numbers[i] <= numbers[i - 1]:
+            result.extend(reversed(numbers[start:i]))
+            print(result)
+            start = i
+            print(start)
+    result.extend(reversed(numbers[start:]))
+    return result
 
-numbers = [5, 7, 10, 4, 2, 7, 8, 1, 3]
-result = reverse_ascending(numbers)
-print(result)
+numbers = [5, 7, 2, 1, 10, 4, 2, 7, 8, 3, 1]
+print(reverse_ascending(numbers))
