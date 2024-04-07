@@ -8,5 +8,5 @@ def reverse_ascending(numbers):
     result.extend(reversed(numbers[start:]))
     return result
 
-numbers = [5, 7, 2, 1, 10, 4, 2, 7, 8, 3, 1]
+numbers = [5, 7, 10, 4, 2, 7, 8, 3, 1]
 print(reverse_ascending(numbers))

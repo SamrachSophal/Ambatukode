@@ -15,6 +15,6 @@ def chunking_by(numbers, chunk):
     return result        
 
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
-chunk = input("Enter number of chunk: ")
+chunk = int(input("Enter number of chunk: "))
 print(chunking_by(numbers, chunk))
 
